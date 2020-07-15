@@ -21,7 +21,7 @@ SCRAMBLE = D R2 F2 D B2 D2 R2 B2 D L2 D' R D B L2 B' L' R' B' F2 R2 D R2 B2 R2 D
 ---------------------------------------------------------------------------------------------
 
 Lúc đầu mới nhìn thì mình có lúng túng không biết nó mã hoá theo kiểu gì, nhưng nhìn vào tên của bài - mình đã được soi sáng! 
-Nếu bây giờ mình viết plain text lên 1 con rubik rồi xoay nó theo 1 quy tắc nào đó, rồi sau đó chép lại các chữ cái trên con rubik của mình thì mình sẽ được 1 cipher text. Tương tự bài này, người ta sử dụng rubik để hoán vị các bytes 
+Nếu bây giờ mình viết plain text lên 1 con rubik rồi xoay nó theo 1 quy tắc nào đó, rồi sau đó chép lại các chữ cái trên con rubik của mình thì mình sẽ được 1 cipher text. Tương tự, ở bài này người ta sử dụng rubik để hoán vị các bytes 
 <img src="RubikCBC/Rubik.png">
 
 Thuật toán mã hoá được thiết kế theo dạng Block cipher (mã hoá theo từng block) mode CBC. Chuỗi SCRAMBLE chính là các thao tác khi encrypt 1 block, mình chỉ cần đi ngược lại là xong.  Thật may mắn khi python có thư viện rubik.cube hỗ trợ mình giải bài này. Bây giờ code thôi!
