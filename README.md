@@ -32,7 +32,8 @@ from rubik.cube import Cube
 def tos(cube):			# chuyển rubik về string
     return "".join(str(cube).split())
 
-def tran(f, c):		#thực hiện xoay rubik với chiều ngược lại, ví dụ truyền vào "F" thì nó sẽ thực hiện hành động "F'"
+def tran(f, c):		#thực hiện xoay rubik với chiều ngược lại
+			#ví dụ truyền vào "F" thì nó sẽ thực hiện hành động "F'"
 	if f == 'F':
 		c.Fi()
 	elif f == 'B':
@@ -76,7 +77,7 @@ def tran(f, c):		#thực hiện xoay rubik với chiều ngược lại, ví d�
 		c.Di()
 		c.Di()
 
-def to_blocks(in_bytes: bytes) -> list:			# cắt cipher text thành các block 54 byte
+def to_blocks(in_bytes: bytes) -> list:		# cắt cipher text thành các block 54 byte
 	return [in_bytes[i:i + 54] for i in range(0, len(in_bytes), 54)]
 
 def xor(a, b):		# xor 2 byte a và b với nhau
@@ -99,7 +100,7 @@ c = Cube(IV)
 for i in s:
 	tran(i, c)
 x = tos(c)
-per = []		#mảng phần tử thứ i trong mảng per chứa vị trí của byte thứ i của plain text trong cipher text (với mỗi block)
+per = []		#phần tử thứ i trong mảng per chứa vị trí của byte thứ i của plain text trong cipher text (với mỗi block)
 for i in range(len(IV)):
 	for j in range(len(IV)):
 		if x[i] == IV[j]:
