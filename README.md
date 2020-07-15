@@ -181,7 +181,7 @@ def de_perm(in_bytes: bytes) -> bytes:
     out = bytes([int(permuted[i:i + 8], 2) for i in range(0, BLOCK_SIZE * 8, 8)])   # chuyen lai ve byte
     return out
 ```
-sau đó chạy brute froce thôi
+sau đó chạy brute force thôi
 ```python
 c = 'hQWYogqLXUO+rePyWkNlBlaAX47/2dCeLFMLrmPKcYRLYZgFuqRC7EtwX4DRtG31XY4az+yOvJJ/pwWR0/J9gg=='
 c = b64decode(c)
