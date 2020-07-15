@@ -1,6 +1,6 @@
 # rgbCTF2020
 
-Giải này do mình không có nhiều thời gian nên không thể viết writeup hết tất cả các bài đã làm được, các bạn thông cảm nhé. Các file của mỗi bài mình để trong các thư mục mang các bài, các bạn có thể tải về và làm thử nhé
+Giải này do mình không có nhiều thời gian nên không thể viết writeup hết tất cả các bài đã làm được, các bạn thông cảm nhé. Các file của mỗi bài mình để trong các thư mục mang tên của các bài, các bạn có thể tải về và làm thử nhé
 
 ## [Beginner] Quirky Resolution
 
